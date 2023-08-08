@@ -1,0 +1,222 @@
+.content-desktop {
+    display: block;
+}
+
+.content-mobile {
+    display: none;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 105.47px;
+    color: #E7E7E7;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42.19px;
+    letter-spacing: 1.5px;
+    color: #C2C2C2;
+    margin-top: 20px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.09px;
+    letter-spacing: 1.5px;
+    color: #000000;
+    display: inline-block;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    height: 3px;
+    width: 25px;
+    box-shadow: 0 25px 0 0 #603EBE;
+    vertical-align: super;
+}
+
+.box-shadow-white {
+    box-shadow: 0 25px 0 0 #FFFFFF;
+}
+
+.color-purple {
+    color: #8F6BE8;
+}
+
+.color-white {
+    color: #FFFFFF;
+}
+
+.content-con {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10% 0 10%;
+}
+
+.content-row img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content-row {
+    padding: 25px 0;
+    text-align: left;
+    width: 50%;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-grey {
+    background-color: #F5F4F9;
+}
+
+.bg-purple {
+    background-color: #5E3DB3;
+}
+
+.bg-darkpurple {
+    background-color: #090C35;
+}
+
+#footballer {
+    background-image: url(../../../public/img/footballer-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 590px;
+    width: 600px;
+    height: 830px;
+    position: absolute;
+    top: 110px;
+    left: 140px;
+}
+
+#basketball {
+    background-image: url(../../../public/img/basketball-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 790px;
+    width: 800px;
+    height: 650px;
+    position: absolute;
+    top: 970px;
+    right: 50px;
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .content-desktop {
+        display: block;
+    }
+    
+    .content-mobile {
+        display: none;
+    }
+
+    #footballer {
+        background-image: url(../../../public/img/footballer-tablet.png);
+        background-size: 410px;
+        width: 330px;
+        height: 750px;
+        left: 0;
+    }
+
+    #basketball {
+        background-image: url(../../../public/img/basketball-tablet.png);
+        background-size: 450px;
+        width: 450px;
+        height: 590px;
+        top: 1200px;
+        right: 0;
+    }
+}
+
+/* Media Query for low resolution  Tablets, Ipads, Mobiles */
+@media (max-width: 767px) {
+    .content-desktop {
+        display: none;
+    }
+    
+    .content-mobile {
+        display: block;
+    }
+
+    #footballer {
+        background-image: url(../../../public/img/footballer-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 300px;
+        left: 50%;
+        top: -25px;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    #basketball {
+        background-image: url(../../../public/img/basketball-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 250px;
+        left: 50%;
+        top: -25px;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .content-con {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .content-row {
+        width: 90%;
+        height: 20vh;
+        padding: 50px 0 60px 0;
+        margin: auto;
+    }
+
+    .content-row-title {
+        width: 90%;
+        height: unset;
+        padding: 0;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 50px;
+        line-height: 58.59px;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 32.81px;
+        letter-spacing: 1.5px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 17.58px;
+    }
+
+    span {
+        font-size: 14px;
+        line-height: 16.41px;
+        width: 20px;
+        height: 1px;
+        box-shadow: 0 20px 0 0 #603EBE;
+    }
+}

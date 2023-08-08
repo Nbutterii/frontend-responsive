@@ -1,0 +1,23 @@
+/* Adjust the positioning of the slick dots */
+.content-mobile .slick-dots {
+    bottom: 25px;
+}
+
+/* Styling for active slick dots */
+.content-mobile .slick-dots li.slick-active button:before {
+    font-size: 15px;
+    opacity: 1;
+    color: #603EBE;
+}
+
+/* Styling for inactive slick dots */
+.content-mobile .slick-dots li button:before {
+    font-size: 15px;
+    opacity: 1;
+    color: #D8D8D8;
+}
+
+/* Adjust the positioning of the slick slider */
+.content-mobile .slick-slider {
+    margin-top: -75px;
+}
